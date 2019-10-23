@@ -11,7 +11,10 @@ setup(
         author='Eszter Bolla',
         author_email='bolla.eszter@gmail.com',
         packages=find_packages('src'),
-        package_dir={'':'src'}
-        install_requires=[]
+        package_dir={'':'src'},
+        install_requires=[],
+        entry_points={
+            'console_scripts' : 'hr=hr.cli:main',
+            },
         )
 
